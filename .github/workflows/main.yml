@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2g
     - name: Set up Python 3.8.16
       uses: actions/setup-python@v1
       with:
@@ -12,8 +12,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-      	python -m venv github_actions_demo
-	      source github_actions_demo/bin/activate
         make install
 
     - name: Lint
