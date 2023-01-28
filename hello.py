@@ -11,5 +11,4 @@ def multiply(x, y):
     Multiply two numbers
     """
 
-    return x*y
-
+    return x * y
