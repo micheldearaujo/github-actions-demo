@@ -12,12 +12,14 @@ jobs:
 
     - name: Install dependencies
       run: |
+      	python -m venv github_actions_demo
+	      source github_actions_demo/bin/activate
         make install
 
     - name: Lint
       run: |
         make lint
-        
+
     - name: Test
       run: |
         make test

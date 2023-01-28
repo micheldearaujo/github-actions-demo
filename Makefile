@@ -1,6 +1,4 @@
 install:
-	python -m venv github_actions_demo
-	source github_actions_demo/bin/activate
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
@@ -24,6 +22,10 @@ lint:
 	
 format:
 	black *.py
-	
+
+clean:
+	rm -rf __pycache__
+	rm -f *.pyc
+	rm -f *.log
 
 
