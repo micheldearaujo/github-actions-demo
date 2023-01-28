@@ -6,4 +6,10 @@ def add(x, y):
     return x + y
 
 
-print(add(-1, 1))
+def multiply(x, y):
+    """
+    Multiply two numbers
+    """
+
+    return x*y
+
