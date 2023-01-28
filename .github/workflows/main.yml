@@ -1,4 +1,4 @@
-name: Python Machine Learning tests with Github Actions
+name: GCP Python 3.7.15 Python Machine Learning tests with Github Actions
 on: [push]
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
         python-version: 3.7.15
     - name: Install dependencies
       run: |
-        make install
+        make install-gcp
     - name: Lint
       run: |
         make lint

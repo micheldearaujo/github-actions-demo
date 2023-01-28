@@ -1,4 +1,4 @@
-name: Python Machine Learning tests with Github Actions
+name: Azure Python 3.8.16
 on: [push]
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
         python-version: 3.8.16
     - name: Install dependencies
       run: |
-        make install
+        make install-azure
     - name: Lint
       run: |
         make lint
